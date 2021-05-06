@@ -135,7 +135,7 @@ app.get("/secrets", function(req, res) {
           res.render("secrets", {usersWithSecrets: foundUsers});
         }
       }
-    })
+    });
   } else {
     res.redirect("/login");
   }
